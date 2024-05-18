@@ -1,0 +1,686 @@
+/* CSS PARA DRUPAL y el XSLT tei-marginalia-lb */
+
+/*Marcas laterales CON LAPIZ*/
+
+/*El cuádruple aun no lo he codificado en el xml. No se si hay.*/
+
+
+.g {}
+.gHide {display:none;}
+
+
+
+.marginalia-cuadruple {
+
+display: block;
+padding-left: 10px;
+margin-left: -17px;
+border-left: 9px double orange ;
+box-shadow: inset 3px 0 #4d4848, -4px 0 #ccc6c6;
+border-bottom-left-radius:  2% 50%;}
+
+.marginalia-triple {
+
+display: block;
+padding-left: 10px;
+margin-left: -17px;
+border-left: 9px double orange ;
+box-shadow: -4px 0 #ec863a;
+border-bottom-left-radius:  2% 50%;
+}
+
+.marginalia-doble {
+
+display: block;
+padding-left: 11px;
+border-left: 8px double orange;
+border-bottom-left-radius: 1% 60%;
+margin-left: -19px;
+}
+
+.marginalia-simple {
+
+display: block;
+padding-left: 12px;
+border-left: 3px solid orange;
+border-bottom-left-radius: 1% 60%;
+margin-left: -15px;
+}
+
+/*Marcas laterales CON TINTA*/
+
+.marginalia-cuadruple-tinta {
+
+display: block;
+padding-left: 10px;
+margin-left: -17px;
+border-left: 9px double navy ;
+box-shadow: inset 3px 0 #4d4848, -4px 0 #ccc6c6;
+border-bottom-left-radius:  2% 50%;}
+
+.marginalia-triple-tinta {
+
+display: block;
+padding-left: 10px;
+margin-left: -17px;
+border-left: 9px double navy ;
+box-shadow: -4px 0 #ccc6c6;
+border-bottom-left-radius:  2% 50%;
+
+}
+
+.marginalia-doble-tinta {
+
+display: block;
+padding-left: 11px;
+border-left: 8px double navy;
+border-bottom-left-radius: 1% 60%;
+margin-left: -19px;
+}
+
+.marginalia-simple-tinta {
+
+display: block;
+padding-left: 12px;
+border-left: 3px solid navy;
+border-bottom-left-radius: 1% 60%;
+margin-left: -15px;
+}
+
+/*Visualización sin saltos de linea. Se hace via .js en js.injector*/
+
+.marginalia-simple-no-lb, .marginalia-doble-no-lb , .marginalia-triple-no-lb {
+
+}
+
+.marginalia-simple-no-lb:before, .marginalia-doble-no-lb:before, .marginalia-triple-no-lb:before {
+
+content: "►";
+color: orange;
+font-weight: bold;
+display: inline;
+
+}
+
+.marginalia-simple-no-lb:after, .marginalia-doble-no-lb:after , .marginalia-triple-no-lb:after {
+
+content: "◄";
+color: orange;
+font-weight: bold;
+display: inline;
+
+}
+
+.marginalia-simple-no-lb:hover, .marginalia-doble-no-lb:hover , .marginalia-triple-no-lb:hover {
+
+text-decoration: none;
+color: orange;
+
+}
+
+
+
+.marginalia-simple-tinta-no-lb, .marginalia-doble-tinta-no-lb , .marginalia-triple-tinta-no-lb {
+
+}
+
+.marginalia-simple-tinta-no-lb:before, .marginalia-doble-tinta-no-lb:before, .marginalia-triple-tinta-no-lb:before {
+
+content: "►";
+color: navy;
+font-weight: bold;
+display: inline;
+
+}
+
+.marginalia-simple-tinta-no-lb:after, .marginalia-doble-tinta-no-lb:after , .marginalia-triple-tinta-no-lb:after {
+
+content: "◄";
+color: navy;
+font-weight: bold;
+display: inline;
+
+}
+
+.marginalia-simple-tinta-no-lb:hover, .marginalia-doble-tinta-no-lb:hover , .marginalia-triple-tinta-no-lb:hover {
+
+text-decoration: none;
+color: navy;
+
+}
+
+
+
+/* Para marcar el añadido de las correcciones  */
+
+.korrektur {
+	color: gray;
+	font-weight: bold;
+
+}
+
+.union-pencil {
+	
+	border-top: 2px solid orange;
+		border-bottom: 2px solid orange;
+	border-top-right-radius: 67% 60%;
+		border-top-left-radius: 67% 60%;
+	border-bottom-left-radius: 67% 60% ;
+	border-bottom-right-radius: 67% 60% ;
+	
+}
+
+
+.maxim {    
+font-style: italic;
+}
+
+.subrayado {
+	text-decoration: underline;
+	color: orange;
+}
+
+.cursiva {
+	font-style: italic;
+}
+
+
+.marginalia-simple:hover, .marginalia-doble:hover, .marginalia-triple:hover {
+
+text-decoration: none;
+color: orange;
+
+}
+
+.marginalia-simple-tinta:hover, .marginalia-doble-tinta:hover, .marginalia-triple-tinta:hover {
+
+text-decoration: none;
+color: navy;
+
+}
+
+
+
+.glosa {
+	color: orange;
+	padding-left: 110px;
+	font-size: 90%;
+	font-weight: bold;
+}
+
+/*Hay que pensar en como hacer con notas largas, para movil*/
+
+.margen {
+	
+	float: left;
+	font-style: italic;
+	padding-right: 7%;
+	margin-left: -25%;
+	margin-right: -5%;
+	
+	
+}
+
+.glosa-tinta {
+	color: navy;
+	padding-left: 60px;
+	font-size: 90%;
+	font-weight: bold;
+	font-style: italic;
+}
+
+a.glosa-cruzada {
+
+float: left;
+font-size: 110%;
+font-style: italic;
+padding-right: 5px;
+margin-left: -10%;
+margin-right: -3%;
+}
+
+/*Se deja la glosa cruzada si color, segun sea, se a;ade con el xslt*/
+
+.tinta {
+color: navy;
+
+}
+
+.lapiz {
+color: orange;
+
+}
+
+/*Debes decidir otro color para esto o para los numeros de p'agni*/
+.archivo {
+	color: silver;
+
+}
+
+/* Añado este para que los themas de DRUPAL 
+no me rendericen el h1 en que se transforma el head, a su gusto*/
+
+
+h1.head_interno {
+	font-size: 110%;
+	font-weight: normal;
+	font-style: normal;
+	text-transform: none;
+	width:80%;
+}
+
+
+.hyphen-vertical {
+	display: none;
+	color: gray;
+}
+
+
+/* ##### Drupal-Main container ##### */
+
+
+
+
+.maincontent {
+ 
+  margin-left:0.5%;
+  width:80%;
+  text-align:justify;
+  padding-top: 5px;
+}
+
+
+
+.extlink:after{
+
+content: url(/images/icon_externalLink.gif); 
+padding-left: 2px;
+
+
+}
+
+.note {
+  position:relative;
+  float:right;
+  clear:none;
+  width:33%;
+  color:black;
+  z-index: 1;
+  display:inline;
+  max-height:250px;
+  overflow:hidden;
+  margin-right:-40%;
+  text-align:left;
+  display:block;
+}
+
+.note a {
+  display:inline;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+
+
+.note span.content {
+  
+  line-height:2;
+  display:none;
+  font-size:0.80em;
+}
+
+
+.imagen_nota {
+
+display: none;
+padding: 3px;
+}
+
+/*Son las notas del editor*/
+
+.note:hover span.content {
+  background-color:#F2F2F2;
+  display:block;
+ 
+}
+
+
+/* ##### Links to notes #####  */
+.authornotelink, .editornotelink {
+  color:white;
+  background-color:#2e4a6b;
+  cursor:pointer;
+  font-size: large;
+}
+
+/* ##### Notes: author ##### */
+.author {
+  margin-top:-1px;
+}
+
+/* ##### Notes: editor ##### */
+.editor {
+  margin-top:20px;
+
+
+
+}
+
+
+
+ /*##### Textual variants via choice ##### */
+.sic, .corr {
+  background-color:#eff682;
+}
+
+.orig, .reg, .abbr, .expan {
+  background-color:#e6e7fd;
+}
+
+
+ /*##### Standard display reg-corr-expan etc. ##### */
+.orig{display:none;}
+.sic{display:none;}
+.hi{font-style: italic;}
+.emph{font-style: italic;}
+.mentioned{font-style: normal;}
+.ll{font-size:0.85em;}
+.note .ll{margin-left:0%;font-size:1.1em;}
+.italic{font-style: italic;}
+.verse{font-size:1.0em;}
+.verse .note .content{font-size:0.85em;}
+.epigraph {margin-left: 40%; font-size:0.90em;}
+.trailer{text-align:center; font-variant:small-caps;}
+.dateline{margin-left: 60%;}
+.salute{margin-left: 5%;}
+.signed{margin-left: 10%; font-style: italic; line-height: 2.2; font-size:1.0em; }
+.del{text-decoration: line-through;
+
+}
+.add{text-decoration: underline;}
+.gap{text-decoration:none}
+.unclear{background-color: #FFB3B3;}
+.stage{font-style:italic; font-variant:normal}
+.speaker{font-variant:small-caps;}
+.sp{font-size:inherit;}
+.lb{text-decoration:none;}
+
+
+
+.link_page 
+{
+
+float:right;
+display: block;
+margin-right: -50px;
+font-size: small;
+color: gray;
+
+/*Anadido para el menu fijo no tape el numero de pagina. especifoco del schoraly theme para drupal
+
+en responsive mode, donde no hay menu, no ser'ia necesario...
+
+*/
+
+/*padding-top: 60px;*/
+
+}
+
+.link_page:hover
+{
+color: gray;
+text-decoration:none;
+}
+
+
+.link_page:hover::before
+{
+content: "page ";
+color: gray;
+text-decoration:none;
+}
+
+.numero {
+	display: none;
+}
+
+
+
+.segmento 
+
+{
+
+}
+
+.segmento-format 
+
+{
+font-style: italic;
+/*font-weight: bold;*/
+}
+
+.flechas {
+	color: red;
+	font-weight: bold;
+}
+
+
+.boton {
+padding: 5px 8px;
+font-size: 12px;
+line-height: 0.4em;
+color: #fff;
+background-color: #5bc0de;
+border-color: #46b8da;
+display: inline-block;
+margin-bottom: 0;
+text-align: center;
+white-space: nowrap;
+vertical-align: top ;
+cursor: pointer;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+border: 1px solid transparent;
+border-radius: 24px;
+margin-right: 2px;
+margin-left: 2px;
+outline: none;    /*PONLO PARA EL OUTLINE DEL BOTON DE LA NOTA*/
+
+}
+
+.boton:hover {
+	
+	/*color: black;*/
+}
+
+
+/*para el contenido del acordeón de la leyenda. La clase viene de bootstrap*/
+
+.collapse {
+	
+
+}
+
+
+
+.texto {
+	padding-top: 10px;
+	font-size: 1.1em;
+	margin-left: 5%;	
+}
+
+.popover-content{
+	color: black;
+	font-size: 0.8em;
+}
+
+.centrado {
+	text-align: center;
+
+	width: 80%;
+}
+
+
+
+
+/*/// menu draggable */
+
+
+#desplazar {
+
+position:fixed;
+   
+}
+
+button 
+
+{cursor: pointer;
+
+}
+
+
+div.btn-group {
+
+/*No queda bien en dispositivos móviles. Si tiene el drupa el side bar derecho, tampoco sale por el margin-left */ 
+
+	position: fixed;
+	margin-left: 32%;
+	display: inline;
+	            z-index: 8;
+}
+
+
+ul.dropdown-menu {
+
+display: none;
+background: white;
+border: 1px solid gray;
+border-radius: 15px;
+list-style-type:none;
+white-space: nowrap;
+		
+}
+
+/*caja-contenido con id para poder override paddings y demás del ul de drupal*/
+#caja-contenido {
+    padding: 1em;
+
+}
+
+/*lineas de división*/
+hr.style1 {
+	height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+
+hr.style2 { 
+  border: 0; 
+  height: 1px; 
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+}
+
+
+/*/// fin menu draggable */
+
+
+.leyenda {
+padding-top: 5px;
+margin-top: 5px;
+
+
+}
+
+/*div.leyenda-boton {
+	
+	position: fixed;
+	margin-left: 50%;
+	margin-top: -2.5px;
+	
+}*/
+
+.subrayado-tinta {
+	
+text-decoration: underline ;
+color: navy;
+}
+
+
+/* Pruebas para otro tipo de randstreichung, con mark-up addspan*/
+
+.lateral {
+	border-bottom: 2px double blue;
+}
+
+
+.lateral:hover {
+
+	background-color: #cbc0c0;
+}
+
+
+.hi {
+
+color: red;
+
+	
+}
+
+.comienzolinea {
+	
+	display: inline;
+	padding-left: 12px;
+	border-left: 9px double red ;
+	margin-left: -21px;
+	box-shadow: inset 3px 0 #4d4848, -4px 0 #ccc6c6;
+}
+
+
+
+
+
+
+
+
+.nota-contenido {
+	display: none;
+	position: absolute;
+	width: 280px;
+	padding: 10px;
+	background: white;
+	color: #000000;
+	border: 1px solid gray;
+	border-bottom-right-radius:  2% 50%;
+	border-radius: 0 15px 15px 15px;
+	font-size: 90%;
+	        z-index: 9;
+
+}
+
+
+#legend {
+	
+	display: none;
+}
+
+
+/*numeros de página*/
+
+
+.pagelink {
+    
+ cursor: pointer;
+
+}
+
+.pagelink:hover {
+    
+opacity: 0.7;    
+text-decoration: none;
+   }
+
+
