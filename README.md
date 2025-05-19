@@ -4,3 +4,4 @@ The scholarly digital edition was built in 2017 using Drupal and TEICHI (a Drupa
 
 This repo is a working backup of the website at <https://schopenhauer.uni.wroc.pl>, which is also available here at <https://editio.github.io/schopenhauer>.
 
+Reviewed by Bianca la Manna (2025), "Review of 'Schopenhauer’s Library'.", RIDE, Issue 20 https://doi.org/10.18716/ride.a.20.1
